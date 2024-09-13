@@ -97,6 +97,7 @@ RecorderOptions::RecorderOptions() :
     snapshot(false),
     verbose(false),
     publish(false),
+    repeat_latched(false),
     compression(compression::Uncompressed),
     prefix(""),
     name(""),
@@ -456,7 +457,7 @@ void Recorder::startWriting() {
         {
             // Overwrite the original receipt time, otherwise the new bag will
             // have a gap before the new messages start.
-            bag_.write(out.second.topic, now, *out.second.msg);
+            bag_.write(out.second.topic, now, *out.second.msg, out.second.connection_header);
         }
     }
 

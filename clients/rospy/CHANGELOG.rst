@@ -2,6 +2,25 @@
 Changelog for package rospy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.17.0 (2024-09-13)
+-------------------
+* Stop using deprecated logger.warn (`#2191 <https://github.com/ros/ros_comm/issues/2191>`_)
+* Expose is_shutdown_requested in rospy module. (`#2267 <https://github.com/ros/ros_comm/issues/2267>`_)
+* Fix error "s is not defined" (`#2328 <https://github.com/ros/ros_comm/issues/2328>`_)
+* Contributors: Guglielmo Gemignani, Michael Grupp, vineet131
+
+1.16.0 (2023-02-15)
+-------------------
+
+1.15.15 (2022-11-23)
+--------------------
+* Move @jacobperron from maintainer to author (`#2302 <https://github.com/ros/ros_comm/issues/2302>`_)
+* Add a workaround for a race condition while closing the socket (`#2212 <https://github.com/ros/ros_comm/issues/2212>`_) (`#2233 <https://github.com/ros/ros_comm/issues/2233>`_)
+* Contributors: Shane Loretz, Daniele Calisi, madmage
+
+1.15.14 (2022-01-06)
+--------------------
+
 1.15.13 (2021-09-22)
 --------------------
 
